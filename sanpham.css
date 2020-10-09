@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+html,body{
+  width: 100%;
+  height: 100%;
+}
+/* Button Hover */
+.btn {
+  background-color: goldenrod;
+  border: none;
+  width: 120px;
+  height: 40px;
+  border-radius: 5px;
+  line-height: 28px;
+  color: #fff;
+  position: relative;
+}
+
+.btn::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  background-color: goldenrod;
+}
+
+.btn:hover {
+  transition: 0.4s;
+  transform: translateY(0px);
+}
+
+.btn:hover::after {
+  transition: 0.4s;
+  transform: scale(1.4);
+  opacity: 0;
+}
+
+.btn:active {
+  transition: 0.4s;
+  transform: translateY(5px);
+}
+
+  .den {
+    background-color: #383838;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .den .icon .fa:hover{
+      color:goldenrod;
+      cursor: pointer;
+  }
+  .den .icon .fa {
+    font-size: 15px;
+    color: white;
+    margin-right: 20px;
+  }
+  .den .call h3 {
+    font-size: 20px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    margin-top: 3px;
+    margin-left: -200px;
+    border-left: 1px solid lightgray;
+    padding: 10px 30px;
+  }
+  .den .open h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 3px;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    padding: 10px 30px;
+  }
+  .den .ng{
+      font-size: 20px;
+      font-size: 20px;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: bold;
+  }
+  .den .bag:hover{
+      color:goldenrod;
+      cursor: pointer;
+  }
+  .den .bag {
+    font-size: 15px;
+    margin-left: -200px;
+    margin-top: -5px;
+  }
+/* end header */
+.logo img{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 210px;
+    margin-top:20px;
+}
+/* end logo */
+.navbar {
+  background-color: #383838;
+}
+.navbar ul li a {
+  color: #fff;
+  text-transform: uppercase;
+  padding: 15px 30px !important;
+  border-right: 2px solid #585858;
+  text-decoration: none;
+}
+
+.navbar ul li a:hover {
+  background-color:#bb1a20;
+}
